@@ -1,0 +1,38 @@
+# taps
+tap 'homebrew/cask'
+
+# casks
+cask 'firefox'
+cask 'hammerspoon'
+cask '1password'
+cask 'jetbrains-toolbox'
+cask 'spotify'
+cask 'sublime-text'
+cask 'discord'
+cask 'slack'
+cask 'tableplus'
+cask 'kitty'
+cask 'figma'
+cask 'skype'
+cask 'google-chrome'
+cask 'vlc'
+cask 'macmediakeyforwarder'
+
+# packages
+brew 'node'
+brew 'git'
+brew 'git-flow'
+brew 'composer'
+brew 'mariadb'
+brew 'php@7.2'
+brew 'redis'
+brew 'go'
+brew 'neovim'
+brew 'kitty'
+brew 'mas'
+
+# Mac App Store
+mas 'The Unarchiver', id: 425424353
+mas 'OneDrive', id: 823766827
+mas 'Microsoft Remote Desktop 10', id: 1295203466
+mas 'Be Focused - Focus Timer', id: 973134470

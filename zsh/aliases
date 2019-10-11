@@ -1,0 +1,37 @@
+# general
+alias l="ls -la"       # List in long format, include dotfiles
+alias ld="ls -ld */"   # List in long format, only directories
+alias rmf="rm -rf"
+
+alias aliases="vim ~/dotfiles/zsh/aliases"
+alias sr="source ~/.zshrc"
+alias aa="aliases && sr"
+
+# navigation
+alias dot="cd ~/dotfiles && l && git status"
+
+# npm
+alias npi="npm i"
+alias npo="npm outdated"
+alias npu="npm update"
+alias npd="npm run dev"
+alias npb="npm run build"
+alias npl="npm list --depth=0"
+alias npre="rmf node_modules && npi"
+
+# brew
+alias bru="brew update"
+alias brg="brew upgrade"
+alias brc="brew cleanup"
+alias brl="brew list"
+
+# knex
+alias kc="knex migrate:make --env development"
+alias km="knex migrate:latest --env development"
+alias kr="knex migrate:rollback"
+alias kre="kr && km && ks"
+alias ksc="knex seed:make"
+alias ks="knex seed:run"
+
+# php
+alias a="php artisan"

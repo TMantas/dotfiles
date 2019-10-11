@@ -1,0 +1,28 @@
+###############################
+# EXPORT ENVIRONMENT VARIABLE #
+###############################
+
+export FZF_DEFAULT_COMMAND="rg --files --no-ignore --hidden --follow 2> /dev/null"
+#export FZF_DEFAULT_COMMAND='ag -U --hidden --ignore .git -g ""'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :300 {}' --bind pgup:preview-up --bind pgdn:preview-down"
+
+export KEYTIMEOUT=1
+
+# Useful for the install scripts
+export DOTFILES="$HOME/dotfiles"
+
+export EDITOR="nvim"
+export GIT_EDITOR="nvim"
+export VISUAL="nvim"
+
+export HISTSIZE=10000
+export XDG_CONFIG_HOME=$HOME
+#export TERM='xterm-256color'
+export TERM='screen-256color'
+export COMPOSER_HOME="$HOME/.composer"
+export ANSIBLE_HOSTS="$HOME/ansible/hosts"
+
+export LC_ALL=en_US.UTF-8
+
+export PATH="/Users/mantas/.composer/vendor/bin:$HOME/go/bin:$PATH"

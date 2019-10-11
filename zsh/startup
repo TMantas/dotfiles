@@ -1,0 +1,22 @@
+#!/bin/bash
+
+##########################
+# STARTUP FOR BASH / ZSH #
+##########################
+
+if [ "$0" = "bash" ] || [ "$0" = "-bash" ] || [ "$0" = "/bin/bash" ]
+  then
+    # bash sourcing
+    SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+else
+    # zsh sourcing
+    SCRIPT_PATH="${0:A:h}"
+    source $SCRIPT_PATH/functions
+
+    # fzf goodies
+    #command -v "fzf" >/dev/null
+fi
+
+# source startup scripts
+source $SCRIPT_PATH/env
+source $SCRIPT_PATH/aliases
