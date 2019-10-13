@@ -10,6 +10,16 @@ alias aa="aliases && sr"
 # navigation
 alias dot="cd ~/dotfiles && l && git status"
 
+# git
+alias gs="git status"
+alias gch="git checkout"
+alias gcm="git commit -m"
+alias gt="git tag"
+alias grtags="git tag -l | xargs git tag -d && ftags"
+alias gltag="ftags && git tag -l --sort=-creatordate | head -1"
+alias gftags="git fetch --tags"
+alias gptags="git push --tags"
+
 # npm
 alias npi="npm i"
 alias npo="npm outdated"

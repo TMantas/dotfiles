@@ -7,5 +7,5 @@ source $ZSH/oh-my-zsh.sh
 source ${ZDOTDIR:-$HOME}/dotfiles/zsh/startup
 
 plugins=(
-    git
+    git-flow
 )
