@@ -53,7 +53,8 @@ hs.hotkey.bind(hyper, 'f', function()
   end
 end)
 
-hs.hotkey.bind(lilHyper, "up", function()
+-- Soft fullscreen
+hs.hotkey.bind(hyper, "up", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
