@@ -7,6 +7,8 @@ alias aliases="vim ~/dotfiles/zsh/aliases"
 alias sr="source ~/.zshrc"
 alias aa="aliases && sr"
 
+alias hosts="sudo $EDITOR /etc/hosts"
+
 # navigation
 alias dot="cd ~/dotfiles && l && git status"
 
