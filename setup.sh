@@ -10,6 +10,8 @@ fi
 # Update Brew recipes.
 brew update
 
+brew install git
+
 # clone this repo to the required dir
 git clone git@gitlab.com:tmantas/dotfiles.git ~/dotfiles
 
