@@ -10,12 +10,14 @@ fi
 # Update Brew recipes.
 brew update
 
+# clone this repo to the required dir
+git clone git@gitlab.com:tmantas/dotfiles.git ~/dotfiles
+
+cd ~/dotfiles
+
 # Install Brewfile bundle.
 brew tap homebrew/bundle
 brew bundle
-
-# clone this repo to the required dir
-git clone git@gitlab.com:tmantas/dotfiles.git ~/dotfiles
 
 # Start mariadb whenever mac starts.
 brew services start mariadb
