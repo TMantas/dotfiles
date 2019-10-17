@@ -35,6 +35,10 @@ hs.hotkey.bind(hyper, '\\' , function()
     ToggleApp('WebStorm')
 end)
 
+hs.hotkey.bind(hyper, 'm' , function()
+    ToggleApp('Mail')
+end)
+
 -- Toggle the App between hide and show
 function ToggleApp(_app)
     frontApp = hs.application.frontmostApplication()
