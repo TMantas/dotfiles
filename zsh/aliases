@@ -29,7 +29,7 @@ alias npu="npm update"
 alias npd="npm run dev"
 alias npb="npm run build"
 alias npl="npm list --depth=0"
-alias npre="rmf node_modules && npi"
+alias npre="rmf node_modules && rm package-lock.json && npi && git add package-lock.json"
 
 # brew
 alias bru="brew update"
