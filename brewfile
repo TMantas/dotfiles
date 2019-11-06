@@ -29,6 +29,8 @@ brew 'redis'
 brew 'go'
 brew 'neovim'
 brew 'mas'
+brew 'imagemagick'
+brew 'pkg-config'
 
 # Mac App Store
 mas 'The Unarchiver', id: 425424353

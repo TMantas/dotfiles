@@ -43,15 +43,20 @@ ln -sF ~/dotfiles/vim/config ~/nvim/config
 ln -sF ~/dotfiles/vim/pluggedconf ~/nvim/pluggedconf
 curl -fLo ~/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Install and configure Valet.
-composer global require laravel/valet
-sudo valet install
-
 # Configure hammerspoon.
 ln -sf ~/dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
 
 # install global npm packages
 npm i -g @vue/cli knex
+
+# linking php just in case
+brew link php@7.2 --force --overwrite
+
+pecl install imagick
+
+# Install and configure Valet.
+composer global require laravel/valet
+sudo valet install
 
 echo ''
 echo 'Done!'
