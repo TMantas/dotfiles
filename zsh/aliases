@@ -9,6 +9,8 @@ alias aa="aliases && sr"
 
 alias hosts="sudo $EDITOR /etc/hosts"
 
+alias vim="nvim"
+
 # navigation
 alias dot="cd ~/dotfiles && l && git status"
 
