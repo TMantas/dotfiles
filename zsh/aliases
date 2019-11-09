@@ -17,10 +17,27 @@ alias gs="git status"
 alias gch="git checkout"
 alias gcm="git commit -m"
 alias gt="git tag"
-alias grtags="git tag -l | xargs git tag -d && ftags"
+alias grtags="git tag -l | xargs git tag -d && gftags"
 alias gltag="ftags && git tag -l --sort=-creatordate | head -1"
 alias gftags="git fetch --tags"
 alias gptags="git push --tags"
+
+# git flow
+
+alias gf='git flow'
+alias hotfix='gf hotfix'
+alias feature='gf feature'
+alias release='gf release'
+
+alias hstart='hotfix start'
+alias hpublish='hotfix publish'
+alias hfinish='hotfix finish -n'
+alias rstart='release start'
+alias rpublish='release publish'
+alias rfinish='release finish -n'
+alias fstart='feature start'
+alias fpublish='feature publish'
+alias ffinish='feature finish'
 
 # npm
 alias npi="npm i"
