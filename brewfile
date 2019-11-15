@@ -3,6 +3,7 @@ tap 'homebrew/cask'
 
 # casks
 cask 'firefox'
+cask 'alfred'
 cask 'hammerspoon'
 cask '1password'
 cask 'jetbrains-toolbox'
