@@ -7,5 +7,7 @@ source $ZSH/oh-my-zsh.sh
 source ${ZDOTDIR:-$HOME}/dotfiles/zsh/startup
 
 plugins=(
+    z
+    zsh-autosuggestions
     git-flow
 )
