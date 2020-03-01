@@ -47,14 +47,19 @@ alias npo="npm outdated"
 alias npu="npm update"
 alias npd="npm run dev"
 alias npb="npm run build"
+alias npr="npm remove"
 alias npl="npm list --depth=0"
 alias npre="rmf node_modules && {} > package-lock.json && npi"
 
 # brew
+alias bro="brew outdated"
 alias bru="brew update"
 alias brg="brew upgrade"
 alias brc="brew cleanup"
-alias brl="brew list"
+alias brl="brew leaves"
+alias brs="brew services list"
+alias brsr="brew services restart"
+alias brss="brew services stop"
 
 # knex
 alias kc="knex migrate:make --env development"
