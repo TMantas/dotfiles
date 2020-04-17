@@ -48,6 +48,7 @@ alias npu="npm update"
 alias npd="npm run dev"
 alias npb="npm run build"
 alias npr="npm remove"
+alias npa="npm audit"
 alias npl="npm list --depth=0"
 alias npre="rmf node_modules && {} > package-lock.json && npi"
 

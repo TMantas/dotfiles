@@ -39,6 +39,14 @@ hs.hotkey.bind(hyper, 'm' , function()
     ToggleApp('Mail')
 end)
 
+hs.hotkey.bind(hyper, 'i' , function()
+    ToggleApp('Insomnia')
+end)
+
+hs.hotkey.bind(hyper, 'j' , function()
+    ToggleApp('Messenger')
+end)
+
 -- Toggle the App between hide and show
 function ToggleApp(_app)
     frontApp = hs.application.frontmostApplication()
