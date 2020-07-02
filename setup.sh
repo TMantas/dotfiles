@@ -37,11 +37,11 @@ chsh -s $(which zsh)
 ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 # Configure Vim.
-ln -sf ~/dotfiles/vim/init.vim ~/nvim/init.vim
-ln -sF ~/dotfiles/vim/ftplugin ~/nvim/ftplugin
-ln -sF ~/dotfiles/vim/config ~/nvim/config
-ln -sF ~/dotfiles/vim/pluggedconf ~/nvim/pluggedconf
-curl -fLo ~/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ln -sf ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
+ln -sF ~/dotfiles/vim/ftplugin ~/.config/nvim/ftplugin
+ln -sF ~/dotfiles/vim/config ~/.config/nvim/config
+ln -sF ~/dotfiles/vim/pluggedconf ~/.config/nvim/pluggedconf
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Configure hammerspoon.
 ln -sf ~/dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua

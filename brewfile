@@ -4,7 +4,9 @@ tap 'homebrew/cask'
 # casks
 cask '1password'
 cask 'alfred'
+cask 'brave-browser'
 cask 'discord'
+cask 'docker'
 cask 'dropbox'
 cask 'figma'
 cask 'firefox'
@@ -16,6 +18,7 @@ cask 'macmediakeyforwarder'
 cask 'microsoft-word'
 cask 'microsoft-excel'
 cask 'microsoft-powerpointl'
+cask 'notion'
 cask 'onedrive'
 cask 'skype'
 cask 'slack'
@@ -27,7 +30,9 @@ cask 'vlc'
 cask 'webstorm'
 
 # packages
+brew 'bat'
 brew 'composer'
+brew 'fzf'
 brew 'git'
 brew 'git-flow'
 brew 'go'
@@ -37,10 +42,14 @@ brew 'node'
 brew 'mariadb'
 brew 'mas'
 brew 'postgresql'
-brew 'php@7.2'
+brew 'php'
 brew 'pkg-config'
 brew 'redis'
+brew 'z'
 
 # Mac App Store
-mas 'Microsoft Remote Desktop 10', id: 1295203466
-mas 'Be Focused - Focus Timer', id: 973134470
+mas 'Microsoft Remote Desktop', id: 1295203466
+mas 'Messenger', id: 1480068668
+mas 'Dato', id: 1470584107
+mas 'Battery Indicator', id: 1206020918
+mas 'Pomodoro.me - Focus on Tasks', id: 1484801884

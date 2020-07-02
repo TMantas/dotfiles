@@ -20,10 +20,10 @@ set incsearch             " But do highlight as you type your search.
 set noshowmatch              " Do not show matching brackets by flickering
 set noshowmode               " We show the mode with airline or lightline
 set ignorecase               " Search case insensitive...
-set smartcase                " ... but not it begins with upper case 
+set smartcase                " ... but not it begins with upper case
 set visualbell            " Flash instead of bell
 
-colorscheme gruvbox8_hard
+"colorscheme gruvbox8_hard
 
 set number
 set cursorline            " highlight current line

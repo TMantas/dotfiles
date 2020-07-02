@@ -3,6 +3,7 @@ alias l="ls -la"       # List in long format, include dotfiles
 alias ld="ls -ld */"   # List in long format, only directories
 alias rmf="rm -rf"
 
+alias al="cat ~/dotfiles/zsh/aliases"
 alias aliases="vim ~/dotfiles/zsh/aliases"
 alias sr="source ~/.zshrc"
 alias aa="aliases && sr"
@@ -49,6 +50,7 @@ alias npd="npm run dev"
 alias npb="npm run build"
 alias npr="npm remove"
 alias npa="npm audit"
+alias npaf="npm audit fix"
 alias npl="npm list --depth=0"
 alias npre="rmf node_modules && {} > package-lock.json && npi"
 
