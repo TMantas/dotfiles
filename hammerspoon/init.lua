@@ -20,7 +20,7 @@ hs.hotkey.bind(hyper, 'o' , function()
 end)
 
 hs.hotkey.bind(hyper, 'k' , function()
-    ToggleApp('Skype')
+    ToggleApp('Slack')
 end)
 
 hs.hotkey.bind(hyper, 'l' , function()
@@ -49,6 +49,18 @@ end)
 
 hs.hotkey.bind(hyper, 'j' , function()
     ToggleApp('Messenger')
+end)
+
+hs.hotkey.bind(hyper, 'h' , function()
+    ToggleApp('Signal')
+end)
+
+hs.hotkey.bind(hyper, 'b' , function()
+    ToggleApp('Brave Browser')
+end)
+
+hs.hotkey.bind(hyper, '\'' , function()
+    ToggleApp('Calendar')
 end)
 
 -- Toggle the App between hide and show
@@ -165,5 +177,3 @@ end)
 hs.hotkey.bind(hyper, "left", function()
   MoveApp("west")
 end)
-
-
