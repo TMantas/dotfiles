@@ -10,7 +10,7 @@ alias aa="aliases && sr"
 
 alias hosts="sudo $EDITOR /etc/hosts"
 
-alias vim="nvim"
+# alias vim="nvim"
 
 # navigation
 alias dot="cd ~/dotfiles && l && git status"
@@ -74,3 +74,8 @@ alias ks="knex seed:run"
 
 # php
 alias a="php artisan"
+
+# kubernetes
+alias ku="kubectl"
+alias kul="ku logs"
+alias kugp="ku get pods"
