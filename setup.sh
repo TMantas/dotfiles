@@ -4,8 +4,10 @@ echo 'Setting up your Mac...'
 
 # Install Brew.
 if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
+
+export PATH=/opt/homebrew/bin:$PATH
 
 # Update Brew recipes.
 brew update
@@ -20,9 +22,6 @@ cd ~/dotfiles
 # Install Brewfile bundle.
 brew tap homebrew/bundle
 brew bundle
-
-# Start mariadb whenever mac starts.
-brew services start mariadb
 
 # Oh-My-Zsh.
 sudo rm -rf ~/.oh-my-zsh
@@ -49,15 +48,5 @@ ln -sf ~/dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
 # install global npm packages
 npm i -g @vue/cli knex
 
-# linking php just in case
-brew link php@7.2 --force --overwrite
-
-pecl install imagick
-
-# Install and configure Valet.
-composer global require laravel/valet
-sudo valet install
-
 echo ''
 echo 'Done!'
-
