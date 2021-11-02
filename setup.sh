@@ -15,7 +15,7 @@ brew update
 brew install git
 
 # clone this repo to the required dir
-git clone git@gitlab.com:tmantas/dotfiles.git ~/dotfiles
+git clone https://gitlab.com/tmantas/dotfiles.git ~/dotfiles
 
 cd ~/dotfiles
 
