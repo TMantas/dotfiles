@@ -48,5 +48,8 @@ ln -sf ~/dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
 # install global npm packages
 npm i -g @vue/cli knex
 
+# MacOS setup
+defaults write com.apple.dock tilesize -integer 55; killall Dock
+
 echo ''
 echo 'Done!'
