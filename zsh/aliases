@@ -24,6 +24,7 @@ alias grtags="git tag -l | xargs git tag -d && gftags"
 alias gltag="ftags && git tag -l --sort=-creatordate | head -1"
 alias gftags="git fetch --tags"
 alias gptags="git push --tags"
+alias dev="git checkout dev"
 
 # git flow
 
