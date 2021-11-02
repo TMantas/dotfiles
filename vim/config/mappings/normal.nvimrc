@@ -14,16 +14,6 @@ nmap <C-ScrollWheelRight> <nop>
 " un-highlight when esc is pressed
 map <silent><esc> :noh<cr>
 
-"disable arrows
-nnoremap <Left> <nop>
-nnoremap <Right> <nop>
-nnoremap <Up> <nop>
-nnoremap <Down> <nop>
-nnoremap <Up>    :resize +2<CR>
-nnoremap <Down>  :resize -2<CR>
-nnoremap <Left>  :vertical resize +2<CR>
-nnoremap <Right> :vertical resize -2<CR>
-
 " buffers
 map gn :bn<cr>
 map gp :bp<cr>
