@@ -25,7 +25,7 @@ brew bundle
 
 # Oh-My-Zsh.
 sudo rm -rf ~/.oh-my-zsh
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 
 # Set default shell.
@@ -46,7 +46,7 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubuserc
 ln -sf ~/dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
 
 # install global npm packages
-npm i -g @vue/cli knex
+npm i -g knex
 
 # MacOS setup
 defaults write com.apple.dock tilesize -integer 55; killall Dock

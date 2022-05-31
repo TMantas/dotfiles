@@ -8,7 +8,7 @@ lilHyper = {"ctrl", "alt"}
 hs.hotkey.bind(hyper, 'r', hs.reload)
 
 hs.hotkey.bind(hyper, 'return' , function()
-    ToggleApp('Kitty')
+    ToggleApp('Warp')
 end)
 
 hs.hotkey.bind(hyper, 'p' , function()
@@ -152,7 +152,7 @@ function MoveApp(direction)
                     win:moveOneScreenWest()
                 end
 
-                hs.timer.doAfter(0.6,function()
+                hs.timer.doAfter(1.2,function()
                     win:setFullScreen(true)
                 end)
             else
