@@ -2,4 +2,4 @@
 
 ## run setup
 
-`curl https://gitlab.com/tmantas/dotfiles/-/raw/master/setup.sh > setup.sh && sh setup.sh`
+`curl https://raw.githubusercontent.com/TMantas/dotfiles/main/setup.sh > setup.sh && sh setup.sh`
