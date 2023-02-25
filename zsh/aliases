@@ -26,22 +26,7 @@ alias gftags="git fetch --tags"
 alias gptags="git push --tags"
 alias dev="git checkout dev"
 
-# git flow
-
-alias gf='git flow'
-alias hotfix='gf hotfix'
-alias feature='gf feature'
-alias release='gf release'
-
-alias hstart='hotfix start'
-alias hpublish='hotfix publish'
-alias hfinish='hotfix finish -n'
-alias rstart='release start'
-alias rpublish='release publish'
-alias rfinish='release finish -n'
-alias fstart='feature start'
-alias fpublish='feature publish'
-alias ffinish='feature finish'
+alias gc='eval "$(make git-config)"'
 
 # npm
 alias npi="npm i"
@@ -73,10 +58,10 @@ alias kre="kr && km && ks"
 alias ksc="knex seed:make"
 alias ks="knex seed:run"
 
-# php
-alias a="php artisan"
-
 # kubernetes
 alias ku="kubectl"
 alias kul="ku logs"
 alias kugp="ku get pods"
+
+# go
+alias gf="gofumpt -l -w ."
