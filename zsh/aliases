@@ -27,6 +27,7 @@ alias gptags="git push --tags"
 alias dev="git checkout dev"
 
 alias gc='eval "$(make git-config)"'
+alias gbc="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
 
 # npm
 alias npi="npm i"
@@ -65,3 +66,4 @@ alias kugp="ku get pods"
 
 # go
 alias gf="gofumpt -l -w ."
+alias gmt="go mod tidy"
