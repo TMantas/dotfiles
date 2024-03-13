@@ -32,9 +32,6 @@ ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 echo "$(which zsh)" >> /etc/shells
 chsh -s $(which zsh)
 
-# Configure Kitty.
-ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
-
 # Configure Vim.
 ln -sf ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
 ln -sF ~/dotfiles/vim/ftplugin ~/.config/nvim/ftplugin

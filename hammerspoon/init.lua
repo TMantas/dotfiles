@@ -35,6 +35,10 @@ hs.hotkey.bind(hyper, '\\' , function()
     ToggleApp('WebStorm')
 end)
 
+hs.hotkey.bind(hyper, '\'' , function()
+    ToggleApp('GoLand')
+end)
+
 hs.hotkey.bind(hyper, 'n' , function()
     ToggleApp('Notion')
 end)
@@ -44,7 +48,7 @@ hs.hotkey.bind(hyper, 'm' , function()
 end)
 
 hs.hotkey.bind(hyper, 'i' , function()
-    ToggleApp('Insomnia')
+    ToggleApp('Postman')
 end)
 
 hs.hotkey.bind(hyper, 'j' , function()
@@ -59,8 +63,12 @@ hs.hotkey.bind(hyper, 'b' , function()
     ToggleApp('Brave Browser')
 end)
 
-hs.hotkey.bind(hyper, '\'' , function()
+hs.hotkey.bind(hyper, ';' , function()
     ToggleApp('Calendar')
+end)
+
+hs.hotkey.bind(hyper, '/' , function()
+    ToggleApp('JetBrains Toolbox')
 end)
 
 -- Toggle the App between hide and show
